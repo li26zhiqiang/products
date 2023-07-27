@@ -1,0 +1,29 @@
+.general-page-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: calc(100vh - 48px);
+
+    .left {
+        flex-grow: 0;
+        box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+        background: #ffffff;
+    }
+
+    .right {
+        flex-grow: 1;
+        flex-shrink: 1;
+        background: #ebeef5;
+        // padding: 16px;
+        overflow-y: auto;
+    }
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
